@@ -41,7 +41,7 @@ export default function WeatherForecast({
         <article className="forecast">
             <div className="main">
                 <div className="info">
-                    <p className="location">{location} London, UK </p>
+                    <p className="location">{location}</p>
                     <time dateTime={getDate(new Date()).dateTime} className="date">
               {getDate(new Date()).readable}
                     </time>
@@ -52,7 +52,6 @@ export default function WeatherForecast({
               alt=""
             />
           <div className="temperature">
-            <p>{temperature}°</p>
             <p>{Math.round(temperature)}°</p>
           </div>
         </div>
